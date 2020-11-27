@@ -136,12 +136,12 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 I did not repeat this process on track two, since it was inversely affecting my model. Since my model does not exactly account for varying heights, the difference in elevation confused the model during training and I found it increased the Huber Loss by approximately 0.003 points.
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would make the model more robust. For example, here is an image that has then been flipped:
 
 ![alt text][image3]
 ![alt text][image4]
 
-After the collection process, I had  data points. I had included preprocessing steps in my Netowrk Layers, such as Cropping and Normalization, so I did not implement any such measures externally.
+After the collection process, I had 48216 data points, out of which 38572 was used for training and 9644 used for validation. I had included preprocessing steps in my Netowrk Layers, such as Cropping and Normalization, so I did not implement any such measures externally.
 
 I observed that shuffling the data externally decreased performance as compared to enabling shuffle inside model.fit() (model.py line 99), so I implemented it there itself. I have also implemented a validation split of 20% inside model.fit().
 
