@@ -23,9 +23,7 @@ The goals / steps of this project are the following:
 [image2]: ./examples/center.jpg "Center Image"
 [image3]: ./examples/flipped_1.png "Straight Image"
 [image4]: ./examples/flipped.png "Flipped Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image5]: ./examples/loss.png "Loss"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -148,3 +146,6 @@ After the collection process, I had  data points. I had included preprocessing s
 I observed that shuffling the data externally decreased performance as compared to enabling shuffle inside model.fit() (model.py line 99), so I implemented it there itself. I have also implemented a validation split of 20% inside model.fit().
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 4 on average as evidenced by the Early Stopping Algorithm. I used an Adam optimizer so that manually training the learning rate wasn't necessary.
+
+The Loss variations over epochs is visible through the following visualization:
+![alt text][image5]
