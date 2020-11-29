@@ -69,6 +69,7 @@ From inside an activated tensorflow environment, run the following commands on _
 | Fully Connected      	| 50,	activation = 'relu'		|
 | Fully Connected      	| 10,	activation = 'relu'		|
 | Fully Connected      	| 1,	activation = 'linear'		|
+
 My model consists of a convolution neural network with a combination of 3x3 filters and 5x5 filters and depths between 24 and 64 (model.py lines 80-84). This is identical to the model proposed by NVIDIA. Some of the layers use striding while others don't.
 
 The model includes RELU layers to introduce nonlinearity (model.py lines 80-84), and the data is normalized in the model using a Keras LayerNormalization layer (model.py line 79). Cropping has also been incorporated into the network itself, to ensure a better model by eliminating areas of non-importance. My research suggests the validation loss increased when cropping is also used towards the bottom of the image, and so it has been skipped.
