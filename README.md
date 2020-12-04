@@ -29,6 +29,8 @@ The dataset for training has also been generated using the same.
 * **Matplotlib**  
 `conda install -c conda-forge matplotlib`
 
+Consider using the _requirements.txt_ for easy installation of Dependencies.
+
 ## Usage
 From inside an activated tensorflow environment, run the following commands on _Anaconda Prompt_:
 * Train:  
