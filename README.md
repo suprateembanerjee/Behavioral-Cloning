@@ -2,7 +2,7 @@
 
 ## Based on Nvidia End-to-End Learning model [here](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf)
 
-The project uses the **simulator** developed by Udacity as present in the repository: https://github.com/udacity/self-driving-car-sim
+The project uses the **simulator** developed by Udacity as present in this [repository](https://github.com/udacity/self-driving-car-sim).
 The dataset for training has also been generated using the same.
 
 ---
